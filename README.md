@@ -1,2 +1,0 @@
-# admission-system
-admission-system
