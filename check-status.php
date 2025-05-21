@@ -143,13 +143,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['pay_now']) && $app) {
           </form>
         <?php else: ?>
           <div class="message" style="color:green;">
+            Enrollment complete! Thank you for your payment.
           </div>
-          
-          <?php if (isset($_GET['payment_confirmed']) && $_GET['payment_confirmed'] == '1'): ?>
-            <div class="message" style="color: green; font-weight: bold; margin-top: 20px;">
-              Enrollment complete! Thank you for your payment.
-            </div>
-          <?php endif; ?>
+        
 
         <?php endif; ?>
       <?php endif; ?>
@@ -159,3 +155,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['pay_now']) && $app) {
   </div>
 </body>
 </html>
+-
